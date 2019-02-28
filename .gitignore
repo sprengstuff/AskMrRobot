@@ -1,0 +1,26 @@
+### Lokale/Eigene Build-Einstellungen für jeden Entwickler
+/developer_local_settings
+
+### Maven
+/target/
+/*/target/
+
+### IntelliJ
+*.iml
+*.iws
+.idea/
+# IntelliJ erstellt dieses Verzeichnis in WAR-Modulen mit WAR-Dependencies
+overlays/
+
+ ### Eclipse
+.metadata
+.settings/
+.loadpath
+.project
+.classpath
+.externalToolBuilders/
+
+### Netbeans
+nbproject/
+/taxme-be-np-cd-installer/shipment/cd/Win/jre/
+/taxme-be-np-cd-installer/shipment/cd/linux/jre/

@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 MAINTAINER Michael Spreng <info@spreng.org>
 LABEL source="https://github.com/sprengstuff/askmrrobot-docker"
@@ -16,7 +16,7 @@ RUN echo 'export PS1="[\u@docker] \W # "' >> /root/.bashrcs && echo "installing 
 	&& apt update \
 	&& apt install -y wget \
 	&& wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb \
-    && dpkg -i packages-microsoft-prod.deb \
+    	&& dpkg -i packages-microsoft-prod.deb \
 	&& apt update  \
 	&& echo "installing more things... " \
 	&& apt install --yes curl \

@@ -3,14 +3,8 @@ FROM microsoft/dotnet:2.2-aspnetcore-runtime
 MAINTAINER Michael Spreng <info@spreng.org>
 LABEL source="https://github.com/sprengstuff/askmrrobot-docker"
 LABEL description="AskMrRobot Simulator v1150 - https://www.askmrrobot.com/wow/simulator/client"
-RUN echo "Starting installation"
-
-###########
-# Runtime #
-###########
 
 RUN echo "installing things... " \
-	&& echo "Microsoft..." \
 	&& apt update \
 	&& apt install -y wget \
 	&& apt install -y unzip \

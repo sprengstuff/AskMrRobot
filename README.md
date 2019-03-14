@@ -41,7 +41,7 @@ docker volume create askmrrobotsettings
 ##### alternative
 start the docker-container and run amr.dll manually, enter the credentials and exit the container 
 ```bash
-docker run --rm -ti -v askmrrobotsettings:/AskMrRobotClient sprengstuff/askmrrobot-docker
+docker run --rm -it -v askmrrobotsettings:/AskMrRobotClient sprengstuff/askmrrobot-docker
 /usr/bin/dotnet  amr.dll 
 ```
 
